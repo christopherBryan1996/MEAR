@@ -1,1 +1,0 @@
-<img src='/imgREADME/apiInicio.gif' >

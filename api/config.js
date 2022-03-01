@@ -1,3 +1,4 @@
+//traemos todas las variables de entorno
 const config = {
     appCofig:{
         port: process.env.APP_PORT

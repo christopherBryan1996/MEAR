@@ -9,6 +9,10 @@ async function addProduct(req,res){
             unitaryPrice, 
             description
         })
+        if(req.file){
+            const {filename} = req.file
+            product.setImgURl(filename)
+        }
         const productStored = await product.save()
         res.status(201).json({productStored})
     } catch (error) {
